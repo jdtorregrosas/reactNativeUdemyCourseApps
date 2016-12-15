@@ -12,6 +12,7 @@ import * as actions from '../actions';
 
 class ListItem extends Component {
   componentWillUpdate() {
+    // You need this when using Android
     UIManager.setLayoutAnimationEnabledExperimental && UIManager.setLayoutAnimationEnabledExperimental(true);
     LayoutAnimation.spring();
   }
